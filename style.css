@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Autour+One&family=Pacifico&family=Rubik&family=Skranji&family=Young+Serif&display=swap');
+
+*{
+    font-family: 'Rubik',sans-sarif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 8rem;
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+section{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.header{
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    background-color: rgb(242, 224, 199);
+}
+.header .flex{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+}
+.header .flex .logo{
+    font-size: 2.5rem;
+    color: rgb(165, 145, 117);
+
+}
+.header .flex .navbar a{
+
+    margin-left: 2rem;
+    color: rgb(165, 145, 117);
+    font-size: 2rem;
+
+}
+.header .flex .navbar a:hover{
+    color: #FF9740;
+}
+#menu-btn{
+    cursor: pointer;
+    color: rgb(165, 145, 117);
+    font-size: 2.5rem;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:991px) {
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width:769px) {
+   #menu-btn{
+    display: inline-block;
+   }
+   #menu-btn.fa-times{
+    transform: rotate(180deg);
+   }
+
+   .header .flex .navbar{
+    position:absolute;
+    top: 99%;
+    left: 0%; right: 0;
+    border-top: .1rem solid;
+    border-bottom: .1rem solid;
+  clip-path: polygon(0 0,100% 0 , 100% 0 , 0 0);
+
+   }
+   .header .flex .navbar.active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+   }
+   .header .flex .navbar a{
+    display: block;
+    margin:2rem;
+   
+
+    }
+}
+
+
+@media (max-width:459px) {
+    html{
+        font-size: 50%;
+    }
+}
+
+
+

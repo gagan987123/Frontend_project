@@ -322,6 +322,65 @@
 
 <!-- end reviews -->
 
+ <section class="contact" id="contact">
+
+
+<h1 class="heading"><span>contact</span> us</h1>
+
+<div class="row">
+    <div class="image">
+<img src="images/Mansplaining-rafiki.svg" alt="">
+    </div>
+
+    <form action="" method="post">
+        <span>your name</span>
+        <input type="text" required placeholder="enter your full name"  maxlength="50"  name="name"  class="box">
+        <span>your email</span>
+
+        <input type="email" required placeholder="enter your valid email"  maxlength="50"  name="email"  class="box">
+        <span>your number</span>
+
+        <input type="number" required placeholder="enter your valid number"  min="0" max="99999999999"  name="number"  class="box" onkeypress="if(this.value.length ==10 ) return flase;">
+        <span>select course</span>
+        <select name="course" class="box" required>
+            <option value="" disabled selected>select the course --</option>
+            <option value="web_dev">web development</option>
+            <option value="DSA">DSA</option>
+
+            <option value="Artificial intelligence">Artificial intelligence</option>
+
+            <option value="app devlopment">App devlopment</option>
+
+            <option value="Digital marketing">Digital marketing</option>
+            <option value="project planing">project planing</option>
+
+         
+
+
+        </select>
+        <span>select gender</span>
+        <div class="radio">
+            <input type="radio" name="gender" value="male" id="male">
+            <label for="male">male</label>
+            <input type="radio" name="gender" value="female" id="female">
+            <label for="female">female</label>
+        </div>
+        <input type="submit" value="send message"  class="btn" name="send" >
+
+    </form>
+
+</div>
+
+
+
+
+
+ </section>
+
+<!-- contact section end -->
+
+
+
 <script src="swiper-bundle.min.js"></script>
 <script src="script.js"></script>
 </body>

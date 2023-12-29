@@ -299,6 +299,67 @@ margin-bottom: 4rem;
 }
 
 
+.contact .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+
+}
+
+.contact .row .image{
+
+    flex: 1 1 40rem;
+
+}
+.contact .row form {
+flex: 1 1 40rem;
+
+}
+.contact .row form .box{
+width: 100%;
+margin-top: 1rem;
+margin-bottom: 1rem;
+border-radius: .5rem;
+font-size: 1.8rem;
+color: black;
+padding: 1.4rem;
+text-transform: none;
+}
+.contact .reviews-slider form span{
+    font-size: 1.5 rem;
+}
+
+.contact .row form .radio{
+    margin-top: 2rem;
+
+}
+.contact .row form .radio label {
+    font-size: 2rem;
+    margin-left: .5rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.contact .row form .radio #female {
+margin-left: 2rem;
+}
+.contact .row form .radio input {
+    height: 2rem;
+    width: 2rem;
+    cursor: pointer;
+}
+.contact .row form .radio #female:checked ~ label[for="female"] {
+color: #FF9740;
+}
+.contact .row form .radio #male:checked ~ label[for="male"] {
+    color: #FF9740;
+    }
+    
+
+
+
+
 
 
 

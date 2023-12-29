@@ -103,11 +103,47 @@ section{
     background-color:#FF9740;
 }
 
+.count {
+  
+    display: flex;
+ color: white;
+ flex-wrap: wrap;
+    justify-content: space-around;
+    
+    
+}
+.count .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minma(27rem,1fr));
+   gap: 1.5rem;
+   align-items: flex-start;
+   
+padding: 1rem;
+}
+.count .box-container .box{
+ border-radius: .5rem;
+ padding: 2rem;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 1.5rem;
+ background-color:  rgb(101, 99, 99);
 
 
+}
 
+.count .box-container .box i{
+    font-size: 5rem;
 
-
+}
+.count .box-container .box .content h3{
+    font-size: 2rem;
+    
+}
+.count .box-container .box .content p{
+    font-size: 1.6rem;
+    
+}
 
 
 
